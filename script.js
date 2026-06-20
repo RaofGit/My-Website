@@ -24,23 +24,22 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 document.getElementById('bookingForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Stop normal form submit
 
-    // Collect data values from form fields
+    // Collect data
     const name = document.getElementById('name').value;
     const bike = document.getElementById('bike').value;
     const packageChoice = document.getElementById('package').value;
     
-    // Store your direct Pakistani phone number string
-    const phoneNumber = "923452268329";
+    const phoneNumber = "923452268329"; // International format for Pakistan
 
-    // Formulate clean, pre-filled WhatsApp message format
+    // Craft the message
     const message = `Hello Apex PPF Lahore! I want to book a PPF slot.%0A%0A` + 
-                    `*Name:* ${encodeURIComponent(name)}%0A` + 
-                    `*Bike Model:* ${encodeURIComponent(bike)}%0A` + 
-                    `*Selected Package:* ${encodeURIComponent(packageChoice)}`;
+                    `Name: ${encodeURIComponent(name)}%0A` + 
+                    `Bike: ${encodeURIComponent(bike)}%0A` + 
+                    `Package: ${encodeURIComponent(packageChoice)}`;
 
-    // Build the finalized WhatsApp redirection link
+    // Build the WhatsApp URL
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
-    // Redirect user to WhatsApp application directly
+    // Redirect to WhatsApp
     window.open(whatsappUrl, '_blank');
 });
