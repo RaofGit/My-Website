@@ -3,158 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex PPF Lahore | Hyper-Gloss Bike Protection</title>
+    <title>HA PPF ON BIKE | Premium Motorcycle Paint Protection in Lahore</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Modern Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- Dynamic Background Layer -->
-    <div class="gradient-bg"></div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">APEX<span>PPF</span></a>
-            <ul class="nav-links" id="navLinks">
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-info">
+                <span><i class="fas fa-map-marker-alt"></i> Johar Town, Lahore</span>
+                <span class="hide-mobile"><i class="fas fa-clock"></i> Mon - Sun: 10 AM - 10 PM</span>
+            </div>
+            <div class="top-contact">
+                <span><i class="fas fa-envelope"></i> theroyal930@gmail.com</span>
+                <span><i class="fas fa-phone-alt"></i> 03452268329</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <div class="logo">
+                <span class="logo-ha">HA</span> PPF ON BIKE
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#benefits">Why PPF?</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#booking">Book Now</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#booking" class="nav-btn">Book Slot</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQs</a></li>
             </ul>
-            <div class="menu-toggle" id="mobileMenu">
+            <div class="menu-toggle" id="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" id="home">
-        <div class="hero-content fade-in">
-            <span class="badge glow-text">Lahore's #1 Specialist</span>
-            <h1>Mirror Finish <span class="highlight glow-text">Armor</span></h1>
-            <p>Invisible. Self-Healing. Ultra-Gloss. Stop chips and scratches before they start. Give your bike the ultimate showroom shine that lasts.</p>
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Ultimate Protection For Your Two-Wheeler</h1>
+            <p>Keep your bike looking brand new with our premium, scratch-resistant, and self-healing Paint Protection Films. We cover the full bike, you just choose the quality.</p>
             <div class="hero-buttons">
-                <a href="#booking" class="btn btn-primary btn-glow">Get a Quote</a>
-                <a href="https://wa.me/923452268329" target="_blank" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> Chat Now</a>
+                <a href="#packages" class="btn btn-secondary">View Packages</a>
+                <a href="#booking" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="trust-indicators">
+                <div class="trust-item"><i class="fas fa-shield-alt"></i> 100% Genuine Materials</div>
+                <div class="trust-item"><i class="fas fa-star"></i> 5-Star Rated</div>
+                <div class="trust-item"><i class="fas fa-hand-holding-usd"></i> No Advance Payment</div>
             </div>
         </div>
     </header>
 
-    <!-- Why PPF Section -->
-    <section class="benefits" id="benefits">
-        <div class="container-width">
-            <h2 class="section-title">Invisible <span class="highlight">Shield</span></h2>
+    <section id="packages" class="packages-section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Full Bike PPF Packages</h2>
+                <p>Every package offers FULL BIKE COVERAGE. Pricing reflects the material quality (PVC vs TPU).</p>
+                <div class="underline"></div>
+            </div>
             
-            <div class="benefits-grid">
-                <div class="card glass">
-                    <div class="icon-box"><i class="fas fa-magic"></i></div>
-                    <h3>Self-Heals</h3>
-                    <p>Watch swirl marks and light scratches vanish instantly under heat or sunlight. Your paint stays perfect.</p>
+            <div class="pricing-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Basic Quality</h3>
+                        <div class="price">Rs. 6,999</div>
+                        <p class="coverage">Full Bike Coverage</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> High-Quality PVC Material</li>
+                        <li><i class="fas fa-check"></i> 120 Microns Thickness</li>
+                        <li><i class="fas fa-check"></i> Standard Gloss Finish</li>
+                        <li><i class="fas fa-check"></i> Minor Scratch Protection</li>
+                        <li><i class="fas fa-check"></i> 1-2 Years Durability</li>
+                        <li class="disabled"><i class="fas fa-times"></i> No Self-Healing</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Prone to Yellowing</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-outline" onclick="selectPackage('Basic')">Select Basic</a>
                 </div>
-                <div class="card glass">
-                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Rock Armor</h3>
-                    <p>Highly impact-resistant film absorbs blows from flying gravel, keys, and daily road debris.</p>
-                </div>
-                <div class="card glass">
-                    <div class="icon-box"><i class="fas fa-sun"></i></div>
-                    <h3>UV Blocker</h3>
-                    <p>Prevents Lahore's harsh sun from fading your vibrant factory paint. Locks in that deep gloss.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- New Gallery Section (Refreshed Images) -->
-    <section class="gallery" id="gallery">
-        <h2 class="section-title">Showroom <span class="highlight">Results</span></h2>
-        <div class="gallery-container">
-            <div class="gallery-item glass">
-                <img src="https://images.unsplash.com/photo-1614165939223-9c8d62f6b4d3?q=80&w=800&auto=format&fit=crop" alt="Ultra glossy black superbike tank with PPF">
-                <div class="overlay"><span>Deep Gloss</span></div>
-            </div>
-            <div class="gallery-item glass">
-                <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf808?q=80&w=800&auto=format&fit=crop" alt="Applying PPF film to a motorcycle headlight">
-                <div class="overlay"><span>Invisible Protection</span></div>
-            </div>
-            <div class="gallery-item glass">
-                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop" alt="Protected custom bike in garage">
-                <div class="overlay"><span>Armor Complete</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section (Refreshed Look) -->
-    <section class="pricing" id="pricing">
-        <div class="container-width">
-            <h2 class="section-title">Protection <span class="highlight">Plans</span></h2>
-            <div class="pricing-grid">
-                <div class="price-card glass">
-                    <h3>Essential</h3>
-                    <div class="price">Tank Only</div>
-                    <ul>
+                <div class="card popular">
+                    <div class="badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Standard Quality</h3>
+                        <div class="price">Rs. 10,999</div>
+                        <p class="coverage">Full Bike Coverage</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> TPH (Hybrid) Material</li>
+                        <li><i class="fas fa-check"></i> 150 Microns Thickness</li>
                         <li><i class="fas fa-check"></i> High Gloss Finish</li>
-                        <li><i class="fas fa-check"></i> Self-Healing TPU</li>
-                        <li><i class="fas fa-check"></i> 3 Year Warranty</li>
+                        <li><i class="fas fa-check"></i> Light Self-Healing Properties</li>
+                        <li><i class="fas fa-check"></i> 3-4 Years Durability</li>
+                        <li><i class="fas fa-check"></i> Stain & Water Resistant</li>
+                        <li><i class="fas fa-check"></i> Better UV Resistance</li>
                     </ul>
-                    <a href="#booking" class="btn btn-secondary">Book Essential</a>
+                    <a href="#booking" class="btn btn-primary" onclick="selectPackage('Standard')">Select Standard</a>
                 </div>
-                <div class="price-card glass featured">
-                    <div class="hot-badge pulse">Most Popular</div>
-                    <h3>Full Body Armor</h3>
-                    <div class="price">Complete Bike</div>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Ultra Gloss or Matte</li>
-                        <li><i class="fas fa-check"></i> Maximum Edge Tucking</li>
-                        <li><i class="fas fa-check"></i> 5+ Year Warranty</li>
-                        <li><i class="fas fa-check"></i> Free Top Coat Maintenance</li>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Premium Quality</h3>
+                        <div class="price">Rs. 16,999</div>
+                        <p class="coverage">Full Bike Coverage</p>
+                    </div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 100% Pure TPU Material</li>
+                        <li><i class="fas fa-check"></i> 180-200 Microns Thickness</li>
+                        <li><i class="fas fa-check"></i> Ultra-Gloss Wet Look</li>
+                        <li><i class="fas fa-check"></i> Advanced Heat Self-Healing</li>
+                        <li><i class="fas fa-check"></i> 5+ Years Durability</li>
+                        <li><i class="fas fa-check"></i> Anti-Yellowing Technology</li>
+                        <li><i class="fas fa-check"></i> Hydrophobic Coating</li>
                     </ul>
-                    <a href="#booking" class="btn btn-primary btn-glow">Protect My Bike</a>
+                    <a href="#booking" class="btn btn-outline" onclick="selectPackage('Premium')">Select Premium</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Booking Section -->
-    <section class="booking" id="booking">
-        <div class="booking-container glass">
-            <h2 class="section-title">Lock Your <span class="highlight">Slot</span></h2>
-            <p>Send details instantly via WhatsApp. Lahore workshop availability fills up fast.</p>
-            
-            <form id="bookingForm">
-                <div class="form-group">
-                    <input type="text" id="name" required placeholder="Your Name (e.g., Ali)">
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>Book Your Installation</h2>
+                    <p>Fill out the form to send your details directly to our WhatsApp. Our team will review your requirements and confirm your slot instantly.</p>
+                    
+                    <div class="contact-details-box">
+                        <ul class="contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Johar Town, Lahore</li>
+                            <li><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> 0345-2268329</li>
+                            <li><i class="fas fa-envelope"></i> <strong>Email:</strong> theroyal930@gmail.com</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" id="bike" required placeholder="Bike Model (e.g., YBR, Heavy Bike)">
+                
+                <div class="booking-form-container">
+                    <form id="bookingForm" onsubmit="submitToWhatsApp(event)">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required placeholder="e.g. Ali Ahmed">
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Contact Number</label>
+                                <input type="tel" id="phone" required placeholder="03XXXXXXXXX">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bike">Bike Make & Model</label>
+                            <input type="text" id="bike" required placeholder="e.g. Suzuki GS150, Yamaha YBR">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="package">Select PPF Quality (Full Bike)</label>
+                            <select id="package" required>
+                                <option value="" disabled selected>Select quality...</option>
+                                <option value="Basic Quality (Rs. 6999)">Basic Quality - Rs. 6,999</option>
+                                <option value="Standard Quality (Rs. 10999)">Standard Quality - Rs. 10,999</option>
+                                <option value="Premium Quality (Rs. 16999)">Premium Quality - Rs. 16,999</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-whatsapp btn-full">
+                            Confirm on WhatsApp <i class="fab fa-whatsapp"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <select id="package" required>
-                        <option value="" disabled selected>Select Package</option>
-                        <option value="Tank Only Protection">Tank Only Protection</option>
-                        <option value="Full Bike PPF">Full Bike PPF Armor</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-submit"><i class="fab fa-whatsapp"></i> Book via WhatsApp</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="gallery" class="gallery-section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Recent Work</h2>
+                <p>Live PPF installation shots from our studio in Lahore.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="PPF%201.jpg" alt="PPF Application on Silver Tank">
+                </div>
+                <div class="gallery-item">
+                    <img src="PPF%202.jpg" alt="PPF Application on Ducati Monster Red Tank">
+                </div>
+                <div class="gallery-item">
+                    <img src="PPF%203.avif" alt="Detailed PPF Application on Ducati Panigale">
+                </div>
+                <div class="gallery-item">
+                    <img src="PPF%204.jfif" alt="PPF Application on Blue Suzuki Bike">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>100% Satisfaction Guaranteed across Lahore</p>
+                <div class="underline"></div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Got the Premium TPU package for my Yamaha R6. The finish is unbelievable! Highly recommend HA PPF in Lahore."</p>
+                    <div class="reviewer">
+                        <h4>Ali Raza</h4>
+                        <span>Yamaha R6 Owner</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"I opted for the Standard package for my bike. The shine is amazing and they delivered the bike right on time."</p>
+                    <div class="reviewer">
+                        <h4>Usman Tariq</h4>
+                        <span>Honda CB150F</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Affordable and professional. The 6999 package covered my whole bike. No advance payment policy built my trust."</p>
+                    <div class="reviewer">
+                        <h4>Zain Abbas</h4>
+                        <span>Suzuki GS150</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best PPF service in Johar Town. The staff is very careful and they use heat guns perfectly around the tank curves."</p>
+                    <div class="reviewer">
+                        <h4>Fahad Khan</h4>
+                        <span>Ducati Monster</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Installation Process</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Deep Wash</h3>
+                    <p>Complete decontamination of the bike.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Measurement</h3>
+                    <p>Custom cutting for perfect panel fitment.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Application</h3>
+                    <p>Bubble-free wet install via pro squeegees.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Heat Seal</h3>
+                    <p>Edges are heat-sealed for long life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h4>Do these packages cover the FULL bike?</h4>
+                    <p>Yes! Every package covers your full motorcycle. The price differences are solely due to the raw material cost (PVC vs TPH vs pure TPU).</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is the difference between Standard and Premium?</h4>
+                    <p>Standard uses TPH which has mild self-healing. Premium uses 100% Pure TPU, which heals deeper scratches automatically under sunlight and gives a far deeper gloss.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does the installation take?</h4>
+                    <p>A full bike PPF installation typically takes between 4 to 6 hours depending on the complexity of your bike's fairings and curves.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I have to pay an advance fee?</h4>
+                    <p>No, we operate on a strict "No Advance Payment" policy. You only pay once the job is completed and you are satisfied with the result.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Apex PPF Lahore. Mirror Finish Specialists.</p>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>HA PPF ON BIKE</h3>
+                <p>Lahore's premier motorcycle paint protection specialists. Protecting your passion, one ride at a time.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p class="footer-contact"><i class="fas fa-map-marker-alt"></i> Johar Town, Lahore</p>
+                <p class="footer-contact"><i class="fas fa-phone-alt"></i> 0345-2268329</p>
+                <p class="footer-contact"><i class="fas fa-envelope"></i> theroyal930@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HA PPF ON BIKE. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/923452268329?text=Hello%20Apex%20PPF%21%20I%20want%20to%20know%20more%20about%20your%20bike%20PPF%20services." class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/923452268329?text=Hello%20HA%20PPF%20ON%20BIKE!%20I%20want%20to%20get%20PPF%20done%20on%20my%20bike." class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script src="script.js"></script>
 </body>
-                            </html>
+</html>
